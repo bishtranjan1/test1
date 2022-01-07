@@ -1,6 +1,9 @@
 import React from "react";
 import Article from "./article";
 class Body extends React.Component {
+	componentDidUpdate(prevProps, prevState) {
+		console.log("componentDidupdate body");
+	}
 	render() {
 		return (
 			<React.Fragment>
